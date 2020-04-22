@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TranslateProject</string>
+    <string name="API_KEY">trnsl.1.1.20200420T213659Z.6ffe4c582a0f4540.30079ac61936c66e67b74dde73ce33c6509972ad</string>
+    <string name="input"></string>
+    <string name="output"></string>
+    <string name="btntrans">TRANSLATE</string>
+    <string name="spinnerLang1">Dil seçiniz</string>
+    <string name="spinnerLang2">Dil seçiniz</string>
+    <string name="btncomp"></string>
+    <string name="btnGiris">SIGN IN</string>
+    <string name="btnGirisYap">Sign in</string>
+    <string name="btnKayit">Register</string>
+
+</resources>
