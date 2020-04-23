@@ -69,6 +69,8 @@ public class Translate extends AppCompatActivity {
 
         spLang.setAdapter(dataAdaptorforPlainText);
         spLang2.setAdapter(dataAdaptorforTranslationText);
+        spLang.setSelection(2);
+
 
         spLang.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
