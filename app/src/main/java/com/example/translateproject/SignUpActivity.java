@@ -23,7 +23,7 @@ public class SignUpActivity extends AppCompatActivity {
     private Button btnNewUser;
     FirebaseAuth fAuth;
     String user, password,email;
-    FirebaseDatabase db;
+
 
     private void init()
     {
@@ -33,18 +33,11 @@ public class SignUpActivity extends AppCompatActivity {
         etPassWord=findViewById(R.id.passWord);
         etUserName=findViewById(R.id.userName);
         fAuth=FirebaseAuth.getInstance();
-        db=FirebaseDatabase.getInstance();
 
 
-    }
-    private void kullanici_kaydet(String username,String email, String password)
-    {
-        DatabaseReference dbRef=db.getReference("Kullanicilar");
-        String uid = fAuth.getUid();
-
-        dbRef.child(uid).setValue(new User(username,email,password));
 
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -72,7 +65,6 @@ public class SignUpActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(SignUpActivity.this, "kullanıcı oluşturuldu",Toast.LENGTH_SHORT).show();
-                            kullanici_kaydet(user,email,password);
                             Intent i = new Intent(SignUpActivity.this, Translate.class);
                             startActivity(i);
 
