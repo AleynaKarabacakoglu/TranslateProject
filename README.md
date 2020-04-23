@@ -1,5 +1,5 @@
 # TranslateProject
-Yandex Api Key ile çeviri uygulaması
+Yandex Api Key ile çeviri Android Mobil Uygulaması
 
 Öncelikle Yandex Api Key Nasıl Kullanılır? 
 
@@ -10,8 +10,7 @@ rınızın urlsi&text=çevirmek istediğiniz cümle&lang="çevirdiğinizdil-çev
 Buradaki urlyi tarayıcınızda çalıştırdığınızda bir json döner.
 
 Örneğin kendi api keyimle oluşturduğum url:
-https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20200420T21365
-9Z.6ffe4c582a0f4540.30079ac61936c66e67b74dde73ce33c6509972ad&text=merhaba%20nas%C4%B1ls%C4%B1n&lang=tr-en
+https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20200420T213659Z.6ffe4c582a0f4540.30079ac61936c66e67b74dde73ce33c6509972ad&text=merhaba%20nas%C4%B1ls%C4%B1n&lang=tr-en
 
 Bu url sonucu dönen json:
 
