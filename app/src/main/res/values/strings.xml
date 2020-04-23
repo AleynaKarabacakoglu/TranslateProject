@@ -10,5 +10,6 @@
     <string name="btnGiris">SIGN IN</string>
     <string name="btnGirisYap">Sign in</string>
     <string name="btnKayit">Register</string>
+    <string name="btnExit">EXIT</string>
 
 </resources>

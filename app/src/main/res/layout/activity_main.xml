@@ -69,17 +69,31 @@
             >
 
         </EditText>
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            >
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/btntrans"
             android:text="@string/btntrans"
-            android:layout_marginLeft="20dp"
+            android:layout_margin="25dp"
         >
-
         </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnExit"
+            android:text="@string/btnExit"
+            android:layout_margin="25dp"
+            >
+        </Button>
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
