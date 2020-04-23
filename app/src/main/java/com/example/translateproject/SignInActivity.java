@@ -9,6 +9,8 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.net.Inet4Address;
+
 public class SignInActivity extends AppCompatActivity {
 
     private Button btnKyt, btnGiris, btnGirisYap;
@@ -25,7 +27,7 @@ public class SignInActivity extends AppCompatActivity {
         etMail = findViewById(R.id.e_mail);
         etSifre = findViewById(R.id.etSifre);
         btnGirisYap = findViewById(R.id.btnGirisYap);
-       // fAuth = FirebaseAuth.getInstance();
+        // fAuth = FirebaseAuth.getInstance();
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,13 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(SignInActivity.this,Translate.class);
+                startActivity(i);
+            }
+        });
+        btnKyt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(SignInActivity.this,SignUpActivity.class);
                 startActivity(i);
             }
         });

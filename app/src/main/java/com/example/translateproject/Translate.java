@@ -46,8 +46,8 @@ public class Translate extends AppCompatActivity {
     private static final String TAG = "Translate";
     private EditText etInput;
     private Spinner spLang,spLang2;
-    private String language[]={"az","en","tr"};
-    private String language2[]={"az","en","tr"};
+    private String[] language ={"az","en","tr"};
+    private String[] language2 ={"az","en","tr"};
     public static TextView txtOutput;
     private Button translateBtn;
     private ImageButton oppositeBtn;
@@ -55,8 +55,8 @@ public class Translate extends AppCompatActivity {
     private RequestQueue mqueue;
     private ArrayAdapter<String> dataAdaptorforPlainText;
     private ArrayAdapter<String> dataAdaptorforTranslationText;
-    String dilcifti = "tr-eng";
-    String yandexKey = "trnsl.1.1.20200420T213659Z.6ffe4c582a0f4540.30079ac61936c66e67b74dde73ce33c6509972ad";
+
+    //String yandexKey = "trnsl.1.1.20200420T213659Z.6ffe4c582a0f4540.30079ac61936c66e67b74dde73ce33c6509972ad";
 
     public void init() {
         etInput = findViewById(R.id.input);
